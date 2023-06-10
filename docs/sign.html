@@ -4,8 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Bruno Ace SC', cursive;
+        }
+    </style>
 </head>
 <body>
-    
+    <form class="row g-3 m-3">
+        <center><p class="h1 mb-5">Sign In</p></center>
+        <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="phone" class="form-control" id="phone">
+          </div>
+          <div class="col-md-6">
+            <label for="id" class="form-label">BGMI ID</label>
+            <input type="text" class="form-control" id="id">
+          </div>
+          <div class="col-md-6">
+            <label for="user" class="form-label">User Name</label>
+            <input type="text" class="form-control" id="user">
+          </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Create Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+            <label for="exampleRadios" class="label m-2">Clan to Join</label>
+            <div class="form-check ms-3">
+                <input class="form-check-input-dark" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                <label class="form-check-label" for="exampleRadios1">
+                    Otsutsuki Clan
+                </label>
+              </div>
+              <div class="form-check ms-3">
+                <input class="form-check-input-dark" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    Uchiha Clan
+                </label>
+              </div>
+              <div class="form-check ms-3">
+                <input class="form-check-input-dark" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                <label class="form-check-label" for="exampleRadios3">
+                    Uzumaki Clan
+                </label>
+              </div>
+          </div>
+          <div class="col-12">
+            <label for="customRange2" class="form-label">Gaming Experience</label>
+            <br>
+            <input type="range" class="form-range-dark ms-3" min="0" max="5" id="customRange2">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Why do you join this Clan?</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        <div class="col-md-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+             I agree the Terms & Conditions
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-dark">Sign in</button>
+        </div>
+      </form>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>  
 </body>
 </html>
